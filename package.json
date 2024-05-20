@@ -1,16 +1,20 @@
 {
   "name": "tokens",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.4.5"
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.12.12",
+    "vite-plugin-dts": "^3.9.1",
+    "vite-tsconfig-paths": "^4.3.2"
   }
 }
